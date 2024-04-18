@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>NoteBook</title>
+</head>
+<body>
+
+    <center>
+    <form>
+    <h1>NoteBook</h1>
+    <label for="s1">Search Notes:</label>
+    <input type="text" id="s1">
+    <p id="para1"></p>
+    <p id="para2"></p>
+    </form>
+    </center>
+    <br><br>
+
+    <form id="f1" onsubmit="abc(event)">
+        <label for="n1">Note Title:</label>
+        <input type="text" id="n1"><br>
+        <label for="d1">Note Desc:</label><br>
+        <textarea id="d1" style="width: 250px; height: 85px;"></textarea><br>
+        <button type="submit" id="btn1">Add To Book</button>
+    </form>
+    <br><br>
+
+    
+    <div id="display_items"></div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.8/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
